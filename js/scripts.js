@@ -14,6 +14,7 @@
 		}
     });
     
+    //jQuery para la función de desplazamiento de páginas: requiere jQuery Easing plugin
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 		$(document).on('click', 'a.page-scroll', function(event) {
@@ -25,6 +26,7 @@
 		});
     });
 
+    //script offcanvas de Bootstrap + elemento agregado para cerrar el menú al hacer clic en una ventana gráfica pequeña
     // offcanvas script from Bootstrap + added element to close menu on click in small viewport
     $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
         $('.offcanvas-collapse').toggleClass('open')
@@ -45,7 +47,8 @@
     .on('mouseenter mouseleave','.dropdown',toggleDropdown)
     .on('click', '.dropdown-menu a', toggleDropdown);
 
-
+    /* Mover etiqueta de campos de formulario cuando el usuario escribe */
+    // para campos de entrada y de área de texto
     /* Move Form Fields Label When User Types */
     // for input and textarea fields
     $("input, textarea").keyup(function(){
@@ -57,7 +60,7 @@
 	});
 	
 
-    /* Back To Top Button */
+    /* Botón Volver al principio */
     // create the back to top button
     $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
     var amountScrolled = 700;
@@ -70,6 +73,7 @@
     });
 
 
+    /* Elimina el enfoque prolongado en los botones */
 	/* Removes Long Focus On Buttons */
 	$(".button, a, button").mouseup(function() {
 		$(this).blur();
