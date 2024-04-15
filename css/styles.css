@@ -760,10 +760,11 @@ input[type='checkbox'] {
 	line-height: 1.375rem;
 }
 .cards-testimonios{
-	display: flex;
+	display:flex;
 	justify-content: center;
 	align-items: center;
 }
+
 
 /*******************/
 /*     Contact     */
